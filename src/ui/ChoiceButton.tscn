@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 3.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 3.0
+draw_center = false
+
+[node name="ChoiceButton" type="Button"]
+margin_right = 12.0
+margin_bottom = 20.0
+mouse_filter = 2
+custom_styles/normal = SubResource( 1 )
+text = "Text"
+align = 2

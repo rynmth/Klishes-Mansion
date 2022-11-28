@@ -1,0 +1,142 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/BasementSafer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/dialogues/locked_door.tres" type="Resource" id=5]
+[ext_resource path="res://src/dialogues/basement_safer_locked.tres" type="Resource" id=6]
+[ext_resource path="res://src/dialogues/basement_safer_unlocked.tres" type="Resource" id=7]
+[ext_resource path="res://src/dialogues/cleaning_room_unlocked.tres" type="Resource" id=8]
+[ext_resource path="res://src/Paper.tscn" type="PackedScene" id=9]
+
+[node name="Basement" instance=ExtResource( 1 )]
+chase_delay = 1.0
+flash_light = true
+level_id = 8
+
+[node name="CanvasModulate" parent="." index="1"]
+color = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 131087, 0, 0, 131088, 0, 0, 131089, 0, 0, 131090, 0, 0, 131091, 0, 0, 131092, 0, 0, 131093, 0, 0, 131094, 0, 0, 131095, 0, 0, 131096, 0, 0, 131097, 0, 0, 131098, 0, 0, 131099, 0, 0, 131100, 0, 0, 131101, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 196626, 0, 0, 196627, 0, 0, 196628, 0, 0, 196629, 0, 0, 196630, 0, 0, 196631, 0, 0, 196632, 0, 0, 196633, 0, 0, 196634, 0, 0, 196635, 0, 0, 196636, 0, 0, 196637, 0, 0, 196638, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 262168, 0, 0, 262169, 0, 0, 262170, 0, 0, 262171, 0, 0, 262172, 0, 0, 262173, 0, 0, 327686, 0, 0, 327692, 0, 0, 327698, 0, 0, 327704, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 0, 17, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 25, 1, 0, 26, 1, 0, 27, 1, 0, 28, 1, 0, 29, 1, 0, 30, 0, 0, 65536, 0, 0, 65537, 2, 0, 65538, 2, 0, 65539, 2, 0, 65540, 2, 0, 65541, 2, 0, 65543, 2, 0, 65544, 2, 0, 65545, 2, 0, 65546, 2, 0, 65547, 2, 0, 65549, 2, 0, 65550, 2, 0, 65551, 2, 0, 65552, 2, 0, 65553, 2, 0, 65555, 2, 0, 65556, 2, 0, 65557, 2, 0, 65558, 2, 0, 65559, 2, 0, 65561, 2, 0, 65562, 2, 0, 65563, 2, 0, 65564, 2, 0, 65565, 2, 0, 65566, 1, 0, 131072, 1, 0, 131099, 3, 0, 131100, 4, 0, 131102, 2, 0, 196608, 2, 0, 262174, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 327699, 0, 0, 327700, 0, 0, 327701, 0, 0, 327702, 0, 0, 327703, 0, 0, 327705, 0, 0, 327706, 0, 0, 327707, 0, 0, 327708, 0, 0, 327709, 0, 0, 327710, 0, 0 )
+
+[node name="ToBasementStairs" parent="Solid" index="0" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( -16, 143 )
+target = "res://src/rooms/BasementStairs.tscn"
+look_direction = 1
+id = 1
+unlocked = true
+
+[node name="ToDepositRoom1" parent="Solid" index="1" instance=ExtResource( 2 )]
+position = Vector2( 208, 48 )
+target = "res://src/rooms/DepositRoom1.tscn"
+unlocked = true
+
+[node name="ToDepositRoom2" parent="Solid" index="2" instance=ExtResource( 2 )]
+position = Vector2( 400, 48 )
+target = "res://src/rooms/DepositRoom2.tscn"
+unlocked = true
+
+[node name="ToDepositRoom3" parent="Solid" index="3" instance=ExtResource( 2 )]
+position = Vector2( 592, 48 )
+target = "res://src/rooms/DepositRoom3.tscn"
+unlocked = true
+
+[node name="ToDepositRoom4" parent="Solid" index="4" instance=ExtResource( 2 )]
+position = Vector2( 784, 48 )
+target = "res://src/rooms/DepositRoom4.tscn"
+unlocked = true
+
+[node name="ToDepositRoom5" parent="Solid" index="5" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 208, 208 )
+target = "res://src/rooms/DepositRoom5.tscn"
+look_direction = 2
+unlocked = true
+
+[node name="ToDepositRoom6" parent="Solid" index="6" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 400, 208 )
+target = "res://src/rooms/DepositRoom6.tscn"
+look_direction = 2
+unlocked = true
+
+[node name="ToDepositRoom7" parent="Solid" index="7" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 592, 208 )
+target = "res://src/rooms/DepositRoom7.tscn"
+look_direction = 2
+unlocked = true
+
+[node name="ToDepositRoom8" parent="Solid" index="8" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 784, 208 )
+target = "res://src/rooms/DepositRoom8.tscn"
+look_direction = 2
+unlocked = true
+
+[node name="ToCleaningRoom" parent="Solid" index="9" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 1008, 112 )
+target = "res://src/rooms/CleaningRoom.tscn"
+look_direction = 3
+unique_id = 2
+required = 3
+locked_messages = [ ExtResource( 5 ) ]
+unlocked_messages = [ ExtResource( 8 ) ]
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 3 )]
+position = Vector2( 16, 144 )
+
+[node name="TeleporterReceiver2" parent="TeleporterReceivers" index="1" instance=ExtResource( 3 )]
+position = Vector2( 208, 80 )
+id = 1
+
+[node name="TeleporterReceiver3" parent="TeleporterReceivers" index="2" instance=ExtResource( 3 )]
+position = Vector2( 401, 80 )
+id = 2
+
+[node name="TeleporterReceiver4" parent="TeleporterReceivers" index="3" instance=ExtResource( 3 )]
+position = Vector2( 592, 80 )
+id = 3
+
+[node name="TeleporterReceiver5" parent="TeleporterReceivers" index="4" instance=ExtResource( 3 )]
+position = Vector2( 784, 80 )
+id = 4
+
+[node name="TeleporterReceiver6" parent="TeleporterReceivers" index="5" instance=ExtResource( 3 )]
+position = Vector2( 208, 175 )
+id = 5
+
+[node name="TeleporterReceiver7" parent="TeleporterReceivers" index="6" instance=ExtResource( 3 )]
+position = Vector2( 400, 175 )
+id = 6
+
+[node name="TeleporterReceiver8" parent="TeleporterReceivers" index="7" instance=ExtResource( 3 )]
+position = Vector2( 593, 176 )
+id = 7
+
+[node name="TeleporterReceiver9" parent="TeleporterReceivers" index="8" instance=ExtResource( 3 )]
+position = Vector2( 784, 176 )
+id = 8
+
+[node name="TeleporterReceiver10" parent="TeleporterReceivers" index="9" instance=ExtResource( 3 )]
+position = Vector2( 976, 111 )
+id = 9
+
+[node name="Light" parent="." index="7"]
+visible = false
+
+[node name="BasementSafer" parent="." index="9" instance=ExtResource( 4 )]
+position = Vector2( 881, 63 )
+locked_messages = [ ExtResource( 6 ) ]
+unlocked_messages = [ ExtResource( 7 ) ]
+
+[node name="Paper" parent="." index="10" instance=ExtResource( 9 )]
+position = Vector2( 912, 71 )
+text = "%BASEMENT_PAPER%"

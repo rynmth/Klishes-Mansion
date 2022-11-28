@@ -1,0 +1,245 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/light/CeilLight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Item.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/dialogues/lamp_take.tres" type="Resource" id=7]
+
+[node name="UtilityRoom" instance=ExtResource( 1 )]
+chase_delay = 1.0
+level_id = 5
+save_from_start = true
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 131087, 0, 0, 131088, 0, 0, 131089, 0, 0, 131090, 0, 0, 131091, 0, 0, 131092, 0, 0, 131093, 0, 0, 131094, 0, 0, 131095, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 196626, 0, 0, 196627, 0, 0, 196628, 0, 0, 196629, 0, 0, 196630, 0, 0, 196631, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 0, 0, 262165, 0, 0, 262166, 0, 0, 262167, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 327698, 0, 0, 327699, 0, 0, 327700, 0, 0, 327701, 0, 0, 327702, 0, 0, 327703, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0, 458771, 0, 0, 458772, 0, 0, 458773, 0, 0, 458774, 0, 0, 458775, 0, 0, 524300, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 0, 17, 1, 0, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 24, 0, 0, 65536, 0, 0, 65537, 10, 0, 65538, 2, 0, 65539, 2, 0, 65540, 2, 0, 65541, 2, 0, 65542, 2, 0, 65543, 2, 0, 65544, 2, 0, 65545, 2, 0, 65546, 2, 0, 65547, 2, 0, 65548, 2, 0, 65549, 2, 0, 65550, 2, 0, 65551, 2, 0, 65552, 2, 0, 65553, 2, 0, 65554, 2, 0, 65555, 2, 0, 65556, 2, 0, 65557, 2, 0, 65558, 2, 0, 65559, 2, 0, 65560, 0, 0, 131072, 0, 0, 131073, 11, 0, 131074, 5, 0, 131095, 6, 0, 131096, 0, 0, 196608, 0, 0, 196629, 6, 0, 196631, 7, 0, 196632, 0, 0, 262144, 0, 0, 262165, 7, 0, 262168, 0, 0, 327680, 0, 0, 327704, 0, 0, 393216, 0, 0, 393240, 0, 0, 458752, 0, 0, 458776, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0 )
+
+[node name="ToCorridorLeft" parent="Solid" index="0" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 400, 304 )
+target = "res://src/rooms/CorridorLeft.tscn"
+look_direction = 2
+id = 10
+unlocked = true
+
+[node name="Box" parent="Solid" index="1" instance=ExtResource( 6 )]
+position = Vector2( 366, 239 )
+is_static = true
+
+[node name="Box51" parent="Solid" index="2" instance=ExtResource( 6 )]
+position = Vector2( 268, 175 )
+is_static = true
+
+[node name="Box11" parent="Solid" index="3" instance=ExtResource( 6 )]
+position = Vector2( 398, 145 )
+is_static = true
+
+[node name="Box14" parent="Solid" index="4" instance=ExtResource( 6 )]
+position = Vector2( 429, 146 )
+is_static = true
+
+[node name="Box33" parent="Solid" index="5" instance=ExtResource( 6 )]
+position = Vector2( 460, 82 )
+is_static = true
+
+[node name="Box41" parent="Solid" index="6" instance=ExtResource( 6 )]
+position = Vector2( 398, 113 )
+is_static = true
+
+[node name="Box34" parent="Solid" index="7" instance=ExtResource( 6 )]
+position = Vector2( 305, 80 )
+is_static = true
+
+[node name="Box15" parent="Solid" index="8" instance=ExtResource( 6 )]
+position = Vector2( 460, 145 )
+is_static = true
+
+[node name="Box16" parent="Solid" index="9" instance=ExtResource( 6 )]
+position = Vector2( 489, 145 )
+
+[node name="Box12" parent="Solid" index="10" instance=ExtResource( 6 )]
+position = Vector2( 433, 210 )
+is_static = true
+
+[node name="Box17" parent="Solid" index="11" instance=ExtResource( 6 )]
+position = Vector2( 490, 178 )
+is_static = true
+
+[node name="Box18" parent="Solid" index="12" instance=ExtResource( 6 )]
+position = Vector2( 490, 209 )
+is_static = true
+
+[node name="Box19" parent="Solid" index="13" instance=ExtResource( 6 )]
+position = Vector2( 522, 145 )
+is_static = true
+
+[node name="Box20" parent="Solid" index="14" instance=ExtResource( 6 )]
+position = Vector2( 554, 209 )
+is_static = true
+
+[node name="Box23" parent="Solid" index="15" instance=ExtResource( 6 )]
+position = Vector2( 554, 145 )
+is_static = true
+
+[node name="Box36" parent="Solid" index="16" instance=ExtResource( 6 )]
+position = Vector2( 521, 112 )
+is_static = true
+
+[node name="Box24" parent="Solid" index="17" instance=ExtResource( 6 )]
+position = Vector2( 587, 146 )
+is_static = true
+
+[node name="Box25" parent="Solid" index="18" instance=ExtResource( 6 )]
+position = Vector2( 620, 146 )
+is_static = true
+
+[node name="Box26" parent="Solid" index="19" instance=ExtResource( 6 )]
+position = Vector2( 653, 146 )
+is_static = true
+
+[node name="Box35" parent="Solid" index="20" instance=ExtResource( 6 )]
+position = Vector2( 618, 82 )
+is_static = true
+
+[node name="Box27" parent="Solid" index="21" instance=ExtResource( 6 )]
+position = Vector2( 653, 178 )
+is_static = true
+
+[node name="Box28" parent="Solid" index="22" instance=ExtResource( 6 )]
+position = Vector2( 653, 208 )
+is_static = true
+
+[node name="Box29" parent="Solid" index="23" instance=ExtResource( 6 )]
+position = Vector2( 720, 208 )
+is_static = true
+
+[node name="Box30" parent="Solid" index="24" instance=ExtResource( 6 )]
+position = Vector2( 751, 174 )
+is_static = true
+
+[node name="Box31" parent="Solid" index="25" instance=ExtResource( 6 )]
+position = Vector2( 751, 145 )
+is_static = true
+
+[node name="Box32" parent="Solid" index="26" instance=ExtResource( 6 )]
+position = Vector2( 753, 206 )
+is_static = true
+
+[node name="Box21" parent="Solid" index="27" instance=ExtResource( 6 )]
+position = Vector2( 586, 209 )
+is_static = true
+
+[node name="Box22" parent="Solid" index="28" instance=ExtResource( 6 )]
+position = Vector2( 586, 241 )
+is_static = true
+
+[node name="Box13" parent="Solid" index="29" instance=ExtResource( 6 )]
+position = Vector2( 434, 241 )
+is_static = true
+
+[node name="Box3" parent="Solid" index="30" instance=ExtResource( 6 )]
+position = Vector2( 301, 209 )
+
+[node name="Box4" parent="Solid" index="31" instance=ExtResource( 6 )]
+position = Vector2( 333, 240 )
+is_static = true
+
+[node name="Box5" parent="Solid" index="32" instance=ExtResource( 6 )]
+position = Vector2( 267, 208 )
+is_static = true
+
+[node name="Box6" parent="Solid" index="33" instance=ExtResource( 6 )]
+position = Vector2( 367, 206 )
+is_static = true
+
+[node name="Box7" parent="Solid" index="34" instance=ExtResource( 6 )]
+position = Vector2( 269, 142 )
+is_static = true
+
+[node name="Box38" parent="Solid" index="35" instance=ExtResource( 6 )]
+position = Vector2( 201, 79 )
+
+[node name="Box39" parent="Solid" index="36" instance=ExtResource( 6 )]
+position = Vector2( 201, 112 )
+is_static = true
+
+[node name="Box40" parent="Solid" index="37" instance=ExtResource( 6 )]
+position = Vector2( 201, 146 )
+is_static = true
+
+[node name="Box42" parent="Solid" index="38" instance=ExtResource( 6 )]
+position = Vector2( 202, 208 )
+is_static = true
+
+[node name="Box44" parent="Solid" index="39" instance=ExtResource( 6 )]
+position = Vector2( 136, 209 )
+is_static = true
+
+[node name="Box45" parent="Solid" index="40" instance=ExtResource( 6 )]
+position = Vector2( 104, 208 )
+is_static = true
+
+[node name="Box46" parent="Solid" index="41" instance=ExtResource( 6 )]
+position = Vector2( 73, 209 )
+is_static = true
+
+[node name="Box47" parent="Solid" index="42" instance=ExtResource( 6 )]
+position = Vector2( 48, 148 )
+is_static = true
+
+[node name="Box48" parent="Solid" index="43" instance=ExtResource( 6 )]
+position = Vector2( 81, 149 )
+is_static = true
+
+[node name="Box49" parent="Solid" index="44" instance=ExtResource( 6 )]
+position = Vector2( 170, 146 )
+is_static = true
+
+[node name="Box52" parent="Solid" index="45" instance=ExtResource( 6 )]
+position = Vector2( 202, 176 )
+is_static = true
+
+[node name="Box50" parent="Solid" index="46" instance=ExtResource( 6 )]
+position = Vector2( 138, 146 )
+is_static = true
+
+[node name="Box8" parent="Solid" index="47" instance=ExtResource( 6 )]
+position = Vector2( 301, 143 )
+is_static = true
+
+[node name="Box9" parent="Solid" index="48" instance=ExtResource( 6 )]
+position = Vector2( 334, 142 )
+
+[node name="Box10" parent="Solid" index="49" instance=ExtResource( 6 )]
+position = Vector2( 366, 144 )
+is_static = true
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 3 )]
+position = Vector2( 400, 271 )
+
+[node name="CeilLight" parent="Light" index="0" instance=ExtResource( 4 )]
+position = Vector2( 200, 148 )
+texture_scale = 1.1
+
+[node name="CeilLight2" parent="Light" index="1" instance=ExtResource( 4 )]
+position = Vector2( 600, 148 )
+texture_scale = 1.1
+
+[node name="Item" parent="." index="9" instance=ExtResource( 5 )]
+position = Vector2( 80, 68 )
+id = 2
+spawn_shadow = true
+dialogue = [ ExtResource( 7 ) ]
+
+[node name="Icon" parent="Item" index="1"]
+frame = 2
+
+[node name="CollisionShape2D" parent="Item" index="2"]
+position = Vector2( 0, 9 )
+
+[editable path="Item"]

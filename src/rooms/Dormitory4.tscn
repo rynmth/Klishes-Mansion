@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/light/CeilLight.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Wardrobe.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Paper.tscn" type="PackedScene" id=6]
+
+[node name="Dormitory4" instance=ExtResource( 1 )]
+chase_delay = 2.0
+level_id = 23
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 0, 0, 65536, 0, 0, 65537, 2, 0, 65538, 2, 0, 65539, 2, 0, 65540, 2, 0, 65541, 2, 0, 65542, 2, 0, 65543, 2, 0, 65544, 2, 0, 65545, 2, 0, 65546, 19, 0, 65547, 8, 0, 65548, 0, 0, 131072, 0, 0, 131073, 6, 0, 131074, 3, 0, 131075, 4, 0, 131082, 20, 0, 131083, 9, 0, 131084, 1, 0, 196608, 0, 0, 196609, 7, 0, 196620, 2, 0, 262144, 0, 0, 327680, 0, 0, 327692, 0, 0, 393216, 0, 0, 393228, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0 )
+
+[node name="ToHallwayTop" parent="Solid" index="0" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 432, 144 )
+target = "res://src/rooms/HallwayTop.tscn"
+look_direction = 3
+id = 1
+unlocked = true
+
+[node name="Wardrobe" parent="Solid" index="1" instance=ExtResource( 5 )]
+position = Vector2( 304, 80 )
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 3 )]
+position = Vector2( 400, 143 )
+
+[node name="CeilLight" parent="Light" index="0" instance=ExtResource( 2 )]
+position = Vector2( 209, 141 )
+
+[node name="Paper" parent="." index="9" instance=ExtResource( 6 )]
+position = Vector2( 116, 69 )
+text = "%DORMITORY_PAPER4%"

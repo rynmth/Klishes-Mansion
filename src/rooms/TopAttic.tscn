@@ -1,0 +1,100 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/light/CeilLight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Wardrobe.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Item.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/dialogues/pickup_crowbar.tres" type="Resource" id=8]
+
+[node name="TopAttic" instance=ExtResource( 1 )]
+chase_delay = 3.0
+level_id = 37
+save_from_start = true
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 589829, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 12, 0, 2, 12, 0, 3, 12, 0, 4, 12, 0, 5, 12, 0, 6, 12, 0, 7, 12, 0, 8, 12, 0, 9, 12, 0, 10, 0, 0, 65536, 0, 0, 65537, 13, 0, 65538, 13, 0, 65539, 13, 0, 65540, 13, 0, 65541, 13, 0, 65542, 13, 0, 65543, 19, 0, 65544, 19, 0, 65545, 13, 0, 65546, 0, 0, 131072, 0, 0, 131073, 3, 0, 131074, 4, 0, 131079, 20, 0, 131080, 20, 0, 131082, 0, 0, 196608, 0, 0, 196618, 0, 0, 262144, 0, 0, 262154, 0, 0, 327680, 0, 0, 327690, 0, 0, 393216, 0, 0, 393226, 0, 0, 458752, 0, 0, 458762, 0, 0, 524288, 0, 0, 524298, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0 )
+
+[node name="ToAttic" parent="Solid" index="0" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 176, 336 )
+target = "res://src/rooms/Attic.tscn"
+look_direction = 2
+id = 3
+unlocked = true
+
+[node name="Wardrobe" parent="Solid" index="1" instance=ExtResource( 5 )]
+position = Vector2( 304, 81 )
+
+[node name="Box" parent="Solid" index="2" instance=ExtResource( 6 )]
+position = Vector2( 112, 80 )
+is_static = true
+
+[node name="Box3" parent="Solid" index="3" instance=ExtResource( 6 )]
+modulate = Color( 0.611765, 0.611765, 0.611765, 1 )
+position = Vector2( 143, 112 )
+
+[node name="Box4" parent="Solid" index="4" instance=ExtResource( 6 )]
+position = Vector2( 80, 113 )
+is_static = true
+
+[node name="Box5" parent="Solid" index="5" instance=ExtResource( 6 )]
+position = Vector2( 144, 144 )
+is_static = true
+
+[node name="Box6" parent="Solid" index="6" instance=ExtResource( 6 )]
+position = Vector2( 145, 175 )
+is_static = true
+
+[node name="Box7" parent="Solid" index="7" instance=ExtResource( 6 )]
+position = Vector2( 112, 176 )
+is_static = true
+
+[node name="Box8" parent="Solid" index="8" instance=ExtResource( 6 )]
+position = Vector2( 47, 176 )
+is_static = true
+
+[node name="Box9" parent="Solid" index="9" instance=ExtResource( 6 )]
+position = Vector2( 143, 238 )
+is_static = true
+
+[node name="Box10" parent="Solid" index="10" instance=ExtResource( 6 )]
+position = Vector2( 78, 241 )
+
+[node name="Box13" parent="Solid" index="11" instance=ExtResource( 6 )]
+position = Vector2( 48, 208 )
+is_static = true
+
+[node name="Box12" parent="Solid" index="12" instance=ExtResource( 6 )]
+position = Vector2( 109, 210 )
+is_static = true
+
+[node name="Box11" parent="Solid" index="13" instance=ExtResource( 6 )]
+position = Vector2( 142, 209 )
+is_static = true
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 4 )]
+position = Vector2( 176, 304 )
+
+[node name="CeilLight" parent="Light" index="0" instance=ExtResource( 3 )]
+position = Vector2( 173, 166 )
+energy = 0.8
+
+[node name="Item" parent="." index="9" instance=ExtResource( 7 )]
+position = Vector2( 45, 67 )
+id = 9
+spawn_shadow = true
+dialogue = [ ExtResource( 8 ) ]
+
+[node name="Icon" parent="Item" index="1"]
+frame = 9
+
+[node name="CollisionShape2D" parent="Item" index="2"]
+position = Vector2( -1, 14 )
+
+[editable path="Item"]

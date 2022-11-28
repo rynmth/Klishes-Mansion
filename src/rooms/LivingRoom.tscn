@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/light/CeilLight.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Safer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Chair.tscn" type="PackedScene" id=6]
+
+[node name="LivingRoom" instance=ExtResource( 1 )]
+chase_delay = 1.0
+level_id = 29
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786438, 0, 0, 786439, 0, 0, 786440, 0, 0, 786441, 0, 0, 786442, 0, 0, 786443, 0, 0, 786444, 0, 0, 786445, 0, 0, 851975, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 0, 0, 65536, 0, 0, 65537, 21, 0, 65538, 22, 0, 65539, 2, 0, 65540, 21, 0, 65541, 22, 0, 65542, 2, 0, 65543, 2, 0, 65544, 2, 0, 65545, 21, 0, 65546, 22, 0, 65547, 2, 0, 65548, 21, 0, 65549, 22, 0, 65550, 0, 0, 131072, 0, 0, 131073, 23, 0, 131074, 24, 0, 131076, 23, 0, 131077, 24, 0, 131079, 5, 0, 131081, 23, 0, 131082, 24, 0, 131084, 23, 0, 131085, 24, 0, 131086, 0, 0, 196608, 0, 0, 196622, 0, 0, 262144, 0, 0, 262158, 0, 0, 327680, 0, 0, 327694, 0, 0, 393216, 0, 0, 393230, 0, 0, 458752, 0, 0, 458766, 0, 0, 524288, 0, 0, 524291, 31, 0, 524292, 33, 0, 524298, 31, 0, 524299, 33, 0, 524302, 0, 0, 589824, 0, 0, 589827, 34, 0, 589828, 36, 0, 589834, 34, 0, 589835, 36, 0, 589838, 0, 0, 655360, 0, 0, 655363, 37, 0, 655364, 39, 0, 655370, 37, 0, 655371, 39, 0, 655374, 0, 0, 720896, 0, 0, 720910, 0, 0, 786432, 0, 0, 786446, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851976, 0, 0, 851977, 0, 0, 851978, 0, 0, 851979, 0, 0, 851980, 0, 0, 851981, 0, 0, 851982, 0, 0 )
+
+[node name="ToHallwayBottom" parent="Solid" index="0" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 240, 464 )
+target = "res://src/rooms/HallwayBottom.tscn"
+look_direction = 2
+id = 6
+unlocked = true
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 3 )]
+position = Vector2( 240, 432 )
+
+[node name="CeilLight" parent="Light" index="0" instance=ExtResource( 2 )]
+position = Vector2( 238, 237 )
+texture_scale = 1.5
+
+[node name="Safer" parent="." index="9" instance=ExtResource( 5 )]
+position = Vector2( 242, 61 )
+
+[node name="Chair2" parent="." index="13" instance=ExtResource( 6 )]
+position = Vector2( 142, 370 )
+
+[node name="Sprite" parent="Chair2" index="0"]
+frame = 3
+
+[node name="Chair6" parent="." index="14" instance=ExtResource( 6 )]
+position = Vector2( 142, 370 )
+
+[node name="Sprite" parent="Chair6" index="0"]
+frame = 3
+
+[node name="Chair13" parent="." index="15" instance=ExtResource( 6 )]
+position = Vector2( 114, 370 )
+
+[node name="Sprite" parent="Chair13" index="0"]
+frame = 3
+
+[node name="Chair7" parent="." index="16" instance=ExtResource( 6 )]
+position = Vector2( 404, 332 )
+
+[node name="Sprite" parent="Chair7" index="0"]
+frame = 1
+
+[node name="Chair9" parent="." index="17" instance=ExtResource( 6 )]
+position = Vector2( 405, 296 )
+
+[node name="Sprite" parent="Chair9" index="0"]
+frame = 1
+
+[node name="Chair4" parent="." index="18" instance=ExtResource( 6 )]
+position = Vector2( 120, 248 )
+
+[node name="Sprite" parent="Chair4" index="0"]
+frame = 2
+
+[node name="Chair11" parent="." index="19" instance=ExtResource( 6 )]
+position = Vector2( 146, 248 )
+
+[node name="Sprite" parent="Chair11" index="0"]
+frame = 2
+
+[node name="Chair5" parent="." index="20" instance=ExtResource( 6 )]
+position = Vector2( 301, 301 )
+
+[node name="Chair8" parent="." index="21" instance=ExtResource( 6 )]
+position = Vector2( 302, 331 )
+
+[editable path="Chair2"]
+[editable path="Chair6"]
+[editable path="Chair13"]
+[editable path="Chair7"]
+[editable path="Chair9"]
+[editable path="Chair4"]
+[editable path="Chair11"]

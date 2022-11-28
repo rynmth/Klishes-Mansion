@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/TeleporterReceiver.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Lever.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Paper.tscn" type="PackedScene" id=5]
+
+[node name="DepositRoom2" instance=ExtResource( 1 )]
+chase_delay = 1.0
+flash_light = true
+level_id = 10
+
+[node name="CanvasModulate" parent="." index="1"]
+color = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+
+[node name="Ground" parent="." index="2"]
+tile_data = PoolIntArray( 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 327682, 0, 0 )
+
+[node name="Solid" parent="." index="3"]
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 0, 0, 65536, 0, 0, 65537, 2, 0, 65538, 2, 0, 65539, 19, 0, 65540, 0, 0, 131072, 0, 0, 131073, 5, 0, 131075, 20, 0, 131076, 0, 0, 196608, 0, 0, 196612, 0, 0, 262144, 0, 0, 262148, 0, 0, 327680, 0, 0, 327681, 0, 0, 327683, 0, 0, 327684, 0, 0 )
+
+[node name="ToBasement" parent="Solid" index="0" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 80, 207 )
+target = "res://src/rooms/Basement.tscn"
+look_direction = 2
+id = 2
+unlocked = true
+
+[node name="Lever" parent="Solid" index="1" instance=ExtResource( 4 )]
+position = Vector2( 81, 77 )
+id = 2
+
+[node name="TeleporterReceiver" parent="TeleporterReceivers" index="0" instance=ExtResource( 3 )]
+position = Vector2( 80, 176 )
+
+[node name="Paper" parent="." index="9" instance=ExtResource( 5 )]
+position = Vector2( 48, 69 )
+text = "%DEPOSIT_ROOM_PAPER2%"

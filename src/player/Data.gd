@@ -203,4 +203,4 @@ func _ready():
 		TranslationServer.set_locale(Globals.language_to_string(Data.language))
 		Data.language = Globals.string_to_language(TranslationServer.get_locale())
 		
-	#Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN

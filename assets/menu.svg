@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient20038">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop20036" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="path2292"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.245364;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 6.6145834,0.12268161 A 6.4919016,6.4919016 0 0 0 0.12268161,6.6145834 6.4919016,6.4919016 0 0 0 6.6145834,13.106485 6.4919016,6.4919016 0 0 0 13.106485,6.6145834 6.4919016,6.4919016 0 0 0 6.6145834,0.12268161 Z m 0,0.25967607 A 6.2322258,6.2322258 0 0 1 12.846809,6.6145834 6.2322258,6.2322258 0 0 1 6.6145834,12.846809 6.2322258,6.2322258 0 0 1 0.38235768,6.6145834 6.2322258,6.2322258 0 0 1 6.6145834,0.38235768 Z" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.245364;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect20937"
+       width="7.7902822"
+       height="1.2983804"
+       x="2.7194424"
+       y="5.9653935"
+       ry="0.25967607" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.245364;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect20941"
+       width="7.7902822"
+       height="1.2983804"
+       x="2.7194424"
+       y="4.0178227"
+       ry="0.25967607" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.245364;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect20943"
+       width="7.7902822"
+       height="1.2983804"
+       x="2.7194424"
+       y="7.9129639"
+       ry="0.25967607" />
+  </g>
+</svg>

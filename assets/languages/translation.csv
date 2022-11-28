@@ -1,0 +1,171 @@
+,en_US,pt_BR
+%GLASS_SHARD%,Glass shard,Pedaço de vidro
+%GLASS_SHARD_DESCRIPTION%,"A piece of glass, by the shape of the glass it appears to be from a glass.","Um pedaço de vidro, pelo formato do vidro ele aparenta ser de um copo."
+%UTILITY_ROOM_KEY%,Utility room key,Chave da despensa
+%UTILITY_ROOM_KEY_DESCRIPTION%,"A simple key, it probably opens the left corridor door.","Uma chave simples, ela provavelmente abre a porta do corredor esquerdo."
+%LAMP%,Lampion,Lampião
+%LAMP_DESCRIPTION%,"A lampiom to use in dark places, it will be very useful to light up the basement and other places.","Um lampião para usar em locais escuros, ele será bem útil para iluminar o porão e outros locais."
+%CLEANING_ROOM_KEY%,Cleaning room key,Chave da sala de limpeza
+%CLEANING_ROOM_KEY_DESCRIPTION%,"A clean silver key, it opens the door next to the basement vault.","Uma chave prateada e limpa, ela abre a porta ao lado do cofre do porão."
+%HAND_CRANK%,Hand crank,Manivela
+%HAND_CRANK_DESCRIPTION%,"An iron crank, it should fit into the door on the right corridor.","Uma manivela de ferro, ela deve encaixar na porta do corredor direito."
+%FLOOR_2_KEY%,2st floor key,Chave do segundo andar
+%FLOOR_2_KEY_DESCRIPTION%,"A half-worn key, it should fit the staircase room.","Uma chave meio desgastada, ela deve servir na porta da escadaria."
+%HALLWAY_TOP_KEY%,Hallway top key,Chave do corredor superior
+%HALLWAY_TOP_KEY_DESCRIPTION%,"A brand new key, it probably opens the first upper door in the bottom hallway.","Uma chave bem novinha como fosse nova, ela provavelmente abre a primeira porta superior do corredor inferior."
+%DORMITORY_KEY%,Dormitory key,Chave dos dormitórios
+%DORMITORY_KEY_DESCRIPTION%,"A thin key, it opens the remaining dorm doors.","Uma chave fina, ela abre as portas restantes dos dormitórios."
+%RUSTY_KEY%,Rusty key,Chave enferrujada
+%RUSTY_KEY_DESCRIPTION%,"An incredibly rusty key, it opens the room to the third floor.","Uma chave incrivelmente enferrujada, ela abre a sala para o terceiro andar"
+%CROWBAR%,Crowbar,Pé de cabra
+%CROWBAR_DESCRIPTION%,"A very rigid crowbar, it's strong enough to turn a valve.","Um pé de cabra bem rígido, ele é forte o bastante para girar uma válvula."
+%KLISHE_ROOM_KEY_TAKE%,Klishe’s room key,Chave do quarto de Klishe
+%KLISHE_ROOM_KEY_DESCRIPTION%,"An incredibly shiny key, it opens Klishe's room.","Uma chave incrivelmente brilhante, ela abre o quarto de Klishe."
+%MANSION_KEY%,Mansion key,Chave da mansão
+%MANSION_KEY_DESCRIPTION%,"A strangely shaped key, it opens the main door. And how are you reading this?","Uma chave com um formato estranho, ela abre a porta principal. E como você está lendo isto?"
+%ENTRANCE%,Entrance,Entrada
+%CORRIDOR_LEFT%,Left corridor,Corredor esquerdo
+%KITCHEN%,Kitchen,Cozinha
+%DINING_ROOM%,Dining room,Sala de jantar
+%CORRIDOR_RIGHT%,Right corridor,Corredor direito
+%UTILITY_ROOM%,Utility room key,Despensa
+%STAIRCASE%,Staircase,Escadaria
+%BASEMENT_STAIRS%,Basement Stairs,Escadaria do porão
+%BASEMENT%,Basement,Porão
+%DEPOSIT_ROOM_1%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_2%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_3%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_4%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_5%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_6%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_7%,Deposit room,Sala de deposito
+%DEPOSIT_ROOM_8%,Deposit room,Sala de deposito
+%CLEANING_ROOM%,Cleaning room,Sala de limpeza.
+%FLOOR_2_STAIRS%,2st floor stairs,Escadaria do segundo andar
+%HALLWAY_BOTTOM%,Hallway bottom,Corredor inferior
+%DORMITORY_1%,Dormitory room,Dormitório
+%DORMITORY_2%,Dormitory room,Dormitório
+%DORMITORY_3%,Dormitory room,Dormitório
+%DORMITORY_4%,Dormitory room,Dormitório
+%DORMITORY_5%,Dormitory room,Dormitório
+%DORMITORY_6%,Dormitory room,Dormitório
+%DORMITORY_7%,Dormitory room,Dormitório
+%PLAYROOM%,Playroom,Sala de jogos
+%BOTTOM_STORAGE_ROOM%,Bottom storage room,Armazém inferior
+%LIVING_ROOM%,Living room,Sala de estar
+%OLD_ROOM%,Old room,Sala antiga
+%FLOOR_3_STAIRS%,3st floor stairs,Escadaria do terceiro andar
+%HALLWAY_TOP%,Hallway top key,Corredor superior
+%ATTIC%,Attic,Sotão
+%TOP_STORAGE_ROOM%,Top storage room,Armazém superior
+%BATHROOM%,Bathroom,Banheiro
+%RESTROOM%,Restroom,Lavatório
+%TOP_ATTIC%,Top attic,Sotão superior
+%KLISHE_ROOM%,Klishe’s room,Quarto de Klishe
+%SAVE_GAME%,Save slot,Salvar slot
+%LOAD_GAME%,Load slot,Carregar slot
+%CONTINUE_GAME%,Continue,Continuar
+%NEW_GAME%,New game,Novo jogo
+%CONTINUE%,Continue,Continuar
+%CONFIG%,Config,Configurações
+%QUIT%,Quit,Sair do jogo
+%EXIT%,Exit,Sair
+%CONFIRM%,Confirm,Confirmar
+%NAME%,Name:,Nome:
+%TEXT_SPEED%,Text speed,Velocidade do texto
+%LANGUAGE%,Language,Linguagem
+%NARRATOR%,Narrator,Narrador
+%INTRO1%,There is a legend of an abandoned mansion in the forest that tells the existence of a monster whose identity is the evil of the very person who invades the mansion.,Existe uma lenda de uma mansão abandonada na floresta que conta a existência de um monstro cuja identidade é o mal da própria pessoa que invade a mansão.
+%INTRO2%,But something that is real is the fact that the people who entered this mansion never returned.,"Mas algo que é real, é o fato de que as pessoas que entraram nessa mansão, nunca mais retornaram."
+%INTRO3%,"Oh, damn, my car is broken, now what? What do I do... Hey, maybe I can get some help from someone in that mansion?","Oh, droga, meu carro está quebrado, e agora? O que eu faço... Ei, talvez eu possa conseguir alguma ajuda de alguém naquela mansão?"
+%INTRO4%,"Well, I think I'm going to enter this mansion that is at least suspicious.","Bom, acho que vou entrar nessa mansão que é no mínimo suspeita."
+%FIRST_TIME1%,HELLO!!! Is anyone there!?,OLÁ!!! Tem alguém aí!?
+%FIRST_TIME2%,"Looks like there's no one, I think I should go now.","Parece que não tem ninguém, acho que eu deveria ir embora."
+%FIRST_TIME3%,What was that noise!?,O que foi aquele barulho!?
+%FIRST_TIME4%,I should go investigate.,Eu deveria ir investigar.
+%BASEMENT_SAFER_LOCKED%,It is locked by a lever mechanism.,Está trancado por um mécanismo de alavancas.
+%BASEMENT_SAFER_UNLOCKED%,I got the [color=yellow]cleaning room key[/color].,Peguei a [color=yellow]chave da sala de limpeza[/color].
+%BATHROOM_UNLOCKED%,"The water has been drained, it should now be possible to enter.","A água foi drenada, agora deve ser possível entrar."
+%CLEANING_ROOM_UNLOCKED%,I opened the door with the [color=yellow]cleaning room key[/color].,Abri a porta com a [color=yellow]chave da sala de limpeza[/color].
+%DARK_ROOM%,"It's very dark inside, I'll probably be able to see it with a flashlight.","Está muito escuro lá dentro, provavelmente vou conseguir ver com uma lanterna."
+%DINING_ROOM_UNLOCKED%,I unlocked the door by turning the [color=yellow]crank[/color].,Destranquei a porta girando a [color=yellow]manivela[/color].
+%DORMITORY_KEY_TAKE%,I got the [color=yellow]dormitory key[/color].,Peguei a [color=yellow]chave do dormitórios[/color].
+%DORMITORY_UNLOCKED%,I opened the door with the [color=yellow]dormitory key[/color].,Abri a porta com a [color=yellow]chave do dormitório[/color].
+%DREAM1%,Uhh…,Ahh...
+%DREAM2%,What the hell happened??,O que diabos aconteceu??
+%DREAM3%,Was this all a dream?,Isso tudo foi um sonho?
+%DREAM4%,"Well, whatever.","Bem, tanto faz."
+%DREAM5%,I'll just go back to sleep.,Eu só vou voltar a dormir.
+%END1%,I ran and ran as far from the mansion as possible.,Corri e corri o mais longe possível da mansão.
+%END2%,... Was this a nightmare?,... Isso foi um pesadelo?
+%END3%,"Well, I don't want to go back there to find out.","Bem, eu não quero voltar lá para descobrir."
+%EXIT_AFTER_CHASE%,I should look for a way out of this mansion.,Eu deveria procurar uma saída desta mansão.
+%EXIT_BEFORE_SHARD%,I should find out what that noise was before I left.,Eu deveria descobrir o que era aquele barulho antes de sair.
+%EXIT_AFTER_SHARD1%,"Which!! Damn, the door is closed.","Que!! Droga, a porta está fechada."
+%EXIT_AFTER_SHARD2%,"…? What, there's something coming from the left. I should hide in the closet.","…? O que, há algo vindo da esquerda. Eu deveria me esconder no armário."
+%EXIT_FINAL%,I opened the door with the [color=yellow]mansion key[/color].,Abri a porta com a [color=yellow]chave da mansão[/color].
+%FLOODED_ROOM%,"Unable to open, room is flooded from inside.","Não é possível abrir, a sala está inundada por dentro."
+%2ST_FLOOR_UNLOCKED%,I opened the door with the [color=yellow]2st floor key[/color].,Abri a porta com a [color=yellow]chave do segundo andar[/color].
+%2ST_FLOOR_KEY_TAKE%,I got the [color=yellow]2st floor key[/color].,Peguei a [color=yellow]chave do segundo andar[/color].
+%HALLWAY_TOP_KEY_TAKE%,I got the [color=yellow]hallway top key[/color].,Peguei a [color=yellow]chave do corredor superior[/color].
+%HALLWAY_TOP_UNLOCKED%,I opened the door with the [color=yellow]hallway top key[/color].,Abri a porta com a [color=yellow]chave do corredor superior[/color].
+%HAND_CRANK_TAKE%,I got the [color=yellow]hald crank[/color].,Peguei a [color=yellow]manivela[/color].
+%HAS_LAMP%,Now I can see using the [color=yellow]lampion[/color].,Agora eu posso ver usando o [color=yellow]lampião[/color].
+%KLISHE_ROOM_KEY%,I got the [color=yellow]Klishe’s room key[/color].,Peguei a [color=yellow]chave do quarto de Klishe[/color].
+%KLISHE_ROOM_UNLOCKED%,I opened the door with the [color=yellow]Klishe’s room key[/color].,Abri a porta com a [color=yellow]chave do quarto de Klishe[/color].
+%LAMP_TAKE%,I got the [color=yellow]lampion[/color].,Peguei o [color=yellow]lampião[/color].
+%LOCKED_DOOR%,It is closed.,Está fechado.
+%OLD_ROOM_UNLOCKED%,I opened the door with the [color=yellow]rusty key[/color].,Abri a porta com a [color=yellow]chave enferrujada[/color].
+%PICKUP_CROWBAR%,I got the [color=yellow]crowbar[/color].,Peguei o [color=yellow]pé de cabra[/color].
+%PICKUP_GLASS_SHARD1%,"Uhh, so that's what made the noise.","Uhh, então foi isso que fez o barulho."
+%PICKUP_GLASS_SHARD2%,"I think I'll pick it up, maybe it'll be useful later.","Acho que vou pegar isso, talvez seja útil mais tarde."
+%PICKUP_GLASS_SHARD3%,I got a [color=yellow]glass shard[/color].,Peguei um [color=yellow]pedaço de vidro[/color].
+%PICKUP_EXIT_KEY1%,I got the [color=yellow]mansion key[/color].,Peguei a [color=yellow]chave da mansão[/color].
+%PICKUP_EXIT_KEY2%,I must leave this mansion immediately!!!,Devo deixar esta mansão imediatamente!!!
+%RUSTY_KEY_TAKE%,I got the [color=yellow]rusty key[/color].,Peguei a [color=yellow]chave enferrujada[/color].
+%START_LIMIT%,There's no reason for me to come this way.,Não há razão para eu vir por aqui.
+%UTILITY_ROOM_KEY_TAKE%,"I got the [color=yellow]utility room key[/color]. Wait, how do I know where this key is from? well, whatever.","Peguei a [color=yellow]chave da despensa[/color]. Espere, como eu sei de onde é essa chave? Bem, tanto faz."
+%UTILITY_ROOM_UNLOCKED%,I opened the door with the [color=yellow]utility room key[/color].,Abri a porta com a [color=yellow]chave da despensa[/color].
+%VALVE_LOCKED%,I need a [color=yellow]crowbar[/color] to turn this.,Preciso de um [color=yellow]pé de cabra[/color] para fazer isto girar.
+%VALVE_UNLOCKED%,I managed to turn the valve using the [color=yellow]crowbar[/color].,Consegui girar a válvula usando o [color=yellow]pé de cabra[/color].
+%WARDROBE_FIRST_INTERACTION%,"A closet, I think it will be useful for me to hide if I need to.","Um armário, acho que vai ser útil para mim esconder se precisar."
+%WRONG_PASSWORD%,The password looks incorrect.,A senha parece incorreta.
+%BASEMENT_PAPER%,"I put the cleaning key inside that safe, to open it just activate the correct levers, a tip to know the correct one is the solution of the puzzles described in the paper each one of the room.","Coloquei a chave de limpeza dentro desse cofre, para abri-lo basta acionar as alavancas corretas, uma dica para saber a correta é a solução dos quebra-cabeças descritos no papel de cada um da sala."
+%DEPOSIT_ROOM_PAPER1%,Outside the mansion there are 3 stones.,Do lado de fora da mansão há 3 pedras.
+%DEPOSIT_ROOM_PAPER2%,The piece of glass was taken from the kitchen.,O pedaço de vidro foi retirado da cozinha.
+%DEPOSIT_ROOM_PAPER3%,In the basement there are 11 doors,No porão há 11 portas
+%DEPOSIT_ROOM_PAPER4%,There is only one locked room in the basement.,Há apenas um quarto trancado no porão.
+%DEPOSIT_ROOM_PAPER5%,Only this basement area is dark.,Apenas esta área do porão é escura.
+%DEPOSIT_ROOM_PAPER6%,The owner of this mansion is Klishe.,O dono desta mansão é Klishe.
+%DEPOSIT_ROOM_PAPER7%,The opposite of the top left room answer.,O oposto da resposta da sala superior esquerda.
+%DEPOSIT_ROOM_PAPER8%,There are 9 papers in the basement of the house.,Há 9 papéis no porão da casa.
+%INVENTORY%,Inventory,Inventário
+%DORMITORY_PAPER1%,"This is room number one, but the answer is room three.","Este é o quarto número um, mas a resposta é o quarto três."
+%DORMITORY_PAPER2%,"Attention, now to facilitate the knowledge of the dormitories each room will have its number.","Atenção, agora para facilitar o conhecimento dos dormitórios cada quarto terá seu número."
+%DORMITORY_PAPER3%,"Number of the rooms:
+First - 2.
+Second - 4.
+Third - 7.
+Fourth - 3.
+Fifth - 9.
+Sixth - 5.
+Seventh – 10.","Número dos quartos:
+Primeiro - 2.
+Segundo - 4.
+Terceiro - 7.
+Quarto - 3.
+Quinto - 9.
+Sexto - 5.
+Sétimo – 10."
+%DORMITORY_PAPER4%,"This is room number two, but the answer is room five.","Este é o quarto número dois, mas a resposta é o quarto cinco."
+%DORMITORY_PAPER5%,"This is room number three, but the answer is room four.","Este é o quarto número três, mas a resposta é o quarto quatro."
+%DORMITORY_PAPER6%,"This is room number four, but the answer is room two.","Este é o quarto número quatro, mas a resposta é o quarto dois."
+%DORMITORY_PAPER7%,"This is room number five, but the answer is room one.","Este é o quarto número cinco, mas a resposta é o quarto um."
+%WARNING%,"This house should be bigger and more complete, but I couldn't finish it in time.
+
+Signed: Construction workers.","Esta casa deveria ser maior e mais completa, mas não consegui terminá-la a tempo.
+
+Assinado: Trabalhadores da construção civil."
+%RESUME%,Resume,Retornar
+%SAVE%,Save,Salvar
+%LOAD%,Load,Carregar

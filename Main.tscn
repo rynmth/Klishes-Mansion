@@ -1,0 +1,402 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://assets/player.png" type="Texture" id=2]
+[ext_resource path="res://src/NewGame.gd" type="Script" id=3]
+[ext_resource path="res://src/Transition.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/ui/Options.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/ui/Saves.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/intro.png" type="Texture" id=7]
+[ext_resource path="res://assets/fonts/arial.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://assets/fonts/arialbd.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://src/ui/AndroidButtons.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/sfx/select.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/sfx/swap.wav" type="AudioStream" id=12]
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=6]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color( 0, 0, 0, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0, 0.403922, 0.972549, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_top = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0, 0, 0, 0 )
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0, 0, 0, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 0 )
+border_width_bottom = 1
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.0509804, 0.0509804, 0.0509804, 0.392157 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.0509804, 0.0509804, 0.0509804, 0.392157 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=11]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id=3]
+Button/fonts/font = SubResource( 4 )
+Button/styles/disabled = SubResource( 2 )
+Button/styles/focus = SubResource( 6 )
+Button/styles/normal = SubResource( 2 )
+Button/styles/pressed = SubResource( 17 )
+HSlider/styles/grabber_area = SubResource( 15 )
+HSlider/styles/grabber_area_highlight = SubResource( 15 )
+HSlider/styles/slider = SubResource( 14 )
+LineEdit/styles/focus = SubResource( 9 )
+LineEdit/styles/normal = SubResource( 8 )
+OptionButton/styles/focus = SubResource( 13 )
+OptionButton/styles/normal = SubResource( 10 )
+OptionButton/styles/pressed = SubResource( 13 )
+PanelContainer/styles/panel = SubResource( 5 )
+PopupMenu/styles/hover = SubResource( 12 )
+PopupMenu/styles/panel = SubResource( 11 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 80
+font_data = ExtResource( 9 )
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 5, 3, 23, 43 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 3 )
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 7 )
+expand = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.941176 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 0, 300 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1080.0
+margin_bottom = 300.0
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 105.0
+margin_right = 1080.0
+margin_bottom = 195.0
+custom_fonts/font = SubResource( 16 )
+text = "Klishe's Mansions"
+align = 1
+
+[node name="MainMenu" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 181.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MainMenu"]
+margin_left = 440.0
+margin_top = 190.0
+margin_right = 640.0
+margin_bottom = 348.0
+rect_min_size = Vector2( 200, 150 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MainMenu/PanelContainer"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 195.0
+margin_bottom = 153.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/PanelContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 180.0
+margin_bottom = 138.0
+
+[node name="NewGame" type="Button" parent="MainMenu/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 170.0
+margin_bottom = 29.0
+focus_neighbour_top = NodePath("../Quit")
+focus_neighbour_bottom = NodePath("../Continue")
+mouse_filter = 2
+text = "%NEW_GAME%"
+
+[node name="Continue" type="Button" parent="MainMenu/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 33.0
+margin_right = 170.0
+margin_bottom = 62.0
+focus_neighbour_top = NodePath("../NewGame")
+focus_neighbour_bottom = NodePath("../Config")
+mouse_filter = 2
+text = "%CONTINUE%"
+
+[node name="Config" type="Button" parent="MainMenu/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 66.0
+margin_right = 170.0
+margin_bottom = 95.0
+focus_neighbour_top = NodePath("../Continue")
+focus_neighbour_bottom = NodePath("../Quit")
+mouse_filter = 2
+text = "%CONFIG%"
+
+[node name="Quit" type="Button" parent="MainMenu/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 99.0
+margin_right = 170.0
+margin_bottom = 128.0
+focus_neighbour_top = NodePath("../Config")
+focus_neighbour_bottom = NodePath("../NewGame")
+mouse_filter = 2
+text = "%QUIT%"
+
+[node name="NewGame" type="CenterContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="PanelContainer" type="PanelContainer" parent="NewGame"]
+margin_left = 340.0
+margin_top = 280.0
+margin_right = 740.0
+margin_bottom = 440.0
+rect_min_size = Vector2( 400, 160 )
+
+[node name="MarginContainer" type="MarginContainer" parent="NewGame/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 393.0
+margin_bottom = 171.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NewGame/PanelContainer/MarginContainer"]
+margin_left = 30.0
+margin_top = 10.0
+margin_right = 376.0
+margin_bottom = 163.0
+custom_constants/separation = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 346.0
+margin_bottom = 100.0
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+margin_right = 346.0
+margin_bottom = 100.0
+
+[node name="TextureRect" type="TextureRect" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_right = 50.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 50, 100 )
+texture = SubResource( 1 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 54.0
+margin_right = 346.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 50
+custom_constants/margin_left = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/MarginContainer"]
+margin_left = 50.0
+margin_right = 242.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_top = 29.0
+margin_right = 192.0
+margin_bottom = 43.0
+text = "%NAME%"
+
+[node name="NameEdit" type="LineEdit" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+margin_top = 47.0
+margin_right = 192.0
+margin_bottom = 71.0
+focus_neighbour_top = NodePath("../../../../../HBoxContainer/Confirm")
+focus_neighbour_bottom = NodePath("../../../../../HBoxContainer/Exit")
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Benjamin"
+max_length = 16
+
+[node name="HSeparator" type="HSeparator" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 110.0
+margin_right = 346.0
+margin_bottom = 114.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 124.0
+margin_right = 346.0
+margin_bottom = 144.0
+
+[node name="Exit" type="Button" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 35.0
+margin_right = 135.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 100, 0 )
+focus_neighbour_left = NodePath("../Confirm")
+focus_neighbour_top = NodePath("../../VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit")
+focus_neighbour_right = NodePath("../Confirm")
+focus_neighbour_bottom = NodePath("../../VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit")
+mouse_filter = 2
+size_flags_horizontal = 6
+text = "%EXIT%"
+
+[node name="Confirm" type="Button" parent="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 175.0
+margin_right = 275.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 100, 0 )
+focus_neighbour_left = NodePath("../Exit")
+focus_neighbour_top = NodePath("../../VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit")
+focus_neighbour_right = NodePath("../Exit")
+focus_neighbour_bottom = NodePath("../../VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit")
+mouse_filter = 2
+size_flags_horizontal = 2
+text = "%CONFIRM%"
+
+[node name="Saves" parent="." instance=ExtResource( 6 )]
+visible = false
+
+[node name="Options" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="Transition" parent="." instance=ExtResource( 4 )]
+
+[node name="AndroidButtons" parent="." instance=ExtResource( 10 )]
+
+[node name="Swap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[connection signal="focus_entered" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/NewGame" to="." method="_swap"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/NewGame" to="." method="_on_NewGame_pressed"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/NewGame" to="." method="_selected"]
+[connection signal="focus_entered" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Continue" to="." method="_swap"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Continue" to="." method="_selected"]
+[connection signal="focus_entered" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Config" to="." method="_swap"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Config" to="." method="_on_Config_pressed"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Config" to="." method="_selected"]
+[connection signal="focus_entered" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Quit" to="." method="_swap"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="MainMenu/PanelContainer/MarginContainer/VBoxContainer/Quit" to="." method="_selected"]
+[connection signal="focus_exited" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit" to="." method="_swap"]
+[connection signal="text_changed" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/MarginContainer/VBoxContainer/NameEdit" to="NewGame" method="_on_NameEdit_text_changed"]
+[connection signal="focus_exited" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Exit" to="." method="_swap"]
+[connection signal="pressed" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Exit" to="." method="_selected"]
+[connection signal="pressed" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Exit" to="NewGame" method="_on_Exit_pressed"]
+[connection signal="focus_exited" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Confirm" to="." method="_swap"]
+[connection signal="pressed" from="NewGame/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Confirm" to="NewGame" method="_on_Confirm_pressed"]
+[connection signal="cancel_pressed" from="Saves" to="." method="_on_Saves_cancel_pressed"]
+[connection signal="save_loaded" from="Saves" to="." method="_on_Saves_save_loaded"]
+[connection signal="cancel_pressed" from="Options" to="." method="_on_Options_cancel_pressed"]

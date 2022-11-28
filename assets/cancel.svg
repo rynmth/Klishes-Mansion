@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient20038">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop20036" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <path
+       id="path2292"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.245364;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="M 6.6145832 0.12247314 A 6.4919016 6.4919016 0 0 0 0.12247314 6.6145832 A 6.4919016 6.4919016 0 0 0 6.6145832 13.106693 A 6.4919016 6.4919016 0 0 0 13.106693 6.6145832 A 6.4919016 6.4919016 0 0 0 6.6145832 0.12247314 z M 6.6145832 0.38240559 A 6.2322258 6.2322258 0 0 1 12.846761 6.6145832 A 6.2322258 6.2322258 0 0 1 6.6145832 12.846761 A 6.2322258 6.2322258 0 0 1 0.38240559 6.6145832 A 6.2322258 6.2322258 0 0 1 6.6145832 0.38240559 z M 4.5201375 4.2509033 L 6.1515624 6.5618733 L 4.4405558 8.9782632 L 5.3138875 8.9782632 L 6.6192341 7.0910399 L 7.906494 8.9782632 L 8.7886107 8.9782632 L 7.0688191 6.5618733 L 8.700244 4.2509033 L 7.8274291 4.2509033 L 6.6192341 6.0327066 L 5.4017374 4.2509033 L 4.5201375 4.2509033 z " />
+  </g>
+</svg>

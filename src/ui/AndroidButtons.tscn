@@ -12,9 +12,10 @@ script = ExtResource( 6 )
 
 [node name="Dpad" type="Control" parent="."]
 margin_left = 60.0
-margin_top = 480.0
+margin_top = 420.0
 margin_right = 100.0
-margin_bottom = 520.0
+margin_bottom = 460.0
+rect_scale = Vector2( 1.25, 1.25 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -22,34 +23,40 @@ __meta__ = {
 [node name="Up" type="TouchScreenButton" parent="Dpad"]
 position = Vector2( 63, -47 )
 normal = ExtResource( 4 )
+passby_press = true
 action = "ui_up"
 
 [node name="Left" type="TouchScreenButton" parent="Dpad"]
 position = Vector2( 0, 122.5 )
 rotation = -1.5708
 normal = ExtResource( 4 )
+passby_press = true
 action = "ui_left"
 
 [node name="Down" type="TouchScreenButton" parent="Dpad"]
 position = Vector2( 162, 192 )
 rotation = 3.14159
 normal = ExtResource( 4 )
+passby_press = true
 action = "ui_down"
 
 [node name="Right" type="TouchScreenButton" parent="Dpad"]
 position = Vector2( 224, 22 )
 rotation = 1.5708
 normal = ExtResource( 4 )
+passby_press = true
 action = "ui_right"
 
 [node name="Action" type="TouchScreenButton" parent="."]
 position = Vector2( 801, 579 )
 normal = ExtResource( 2 )
+passby_press = true
 action = "ui_accept"
 
 [node name="Cancel" type="TouchScreenButton" parent="."]
 position = Vector2( 900, 495 )
 normal = ExtResource( 5 )
+passby_press = true
 action = "ui_cancel"
 
 [node name="Menu" type="TouchScreenButton" parent="."]

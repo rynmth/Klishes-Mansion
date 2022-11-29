@@ -7,8 +7,6 @@ onready var _stream_player : AudioStreamPlayer = $AudioStreamPlayer
 
 signal exit
 
-var first_interaction := false
-
 
 func action(player : Area2D):
 	if Data.items.has(Globals.ItemsID.MANSION_KEY) : return
@@ -16,7 +14,7 @@ func action(player : Area2D):
 	
 	player.set_process(false)
 	
-	if not first_interaction and not Data.get_meta("chased", false):
+	if not Data.first_wardrobe_interaction and not Data.get_meta("chased", false):
 		var dialogue_box := _dialogue_box.instance()
 		
 		dialogue_box.message_data = [load("res://src/dialogues/wardrober_first_interaction.tres")]
@@ -25,7 +23,6 @@ func action(player : Area2D):
 	
 	Data.set_meta("hidden", true)
 	Data.first_wardrobe_interaction = true
-	first_interaction = true
 	
 	var transition := _transition.instance()
 	
@@ -46,15 +43,12 @@ func action(player : Area2D):
 	player.set_process(true)
 
 
-func _unhandled_input(event : InputEvent):
+func _input(event : InputEvent):
 	if event is InputEventScreenTouch and event.pressed:
 		emit_signal("exit")
 
 
-func _process(_delta : float):
-	if Input.is_action_just_pressed("ui_accept"):
+func _unhandled_input(event : InputEvent):
+	if event is InputEventKey and event.pressed:
 		emit_signal("exit")
 
-
-func _ready():
-	first_interaction = Data.first_wardrobe_interaction

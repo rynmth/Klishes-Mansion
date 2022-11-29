@@ -22,6 +22,9 @@ func _process(_delta : float):
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	).ceil()
 	
+	var speed := SPRINT_SPEED if Input.is_action_pressed("ui_cancel") else WALK_SPEED
+	if Data.auto_run : speed = SPRINT_SPEED
+	
 	if Data.first_time : return
 	
 	if Input.is_action_just_pressed("open_inventory") and not Data.get_meta("chased", false):
@@ -41,7 +44,7 @@ func _process(_delta : float):
 	if not move or warping: return
 	if move.length() > 1 : move.x = 0
 	
-	_anim_player.playback_speed = SPRINT_SPEED if Input.is_action_pressed("ui_cancel") else WALK_SPEED
+	_anim_player.playback_speed = speed
 	
 	var dir : Vector2 = _grid.request_movement(self, move)
 	

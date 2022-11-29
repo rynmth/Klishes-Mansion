@@ -8,6 +8,7 @@ onready var _stream_player : AudioStreamPlayer = $AudioStreamPlayer
 
 
 func _ready():
+	if Chase.playing : Chase.stop()
 	_stream_player.play()
 	_transition.fade_out()
 	yield(_transition, "finished")

@@ -6,6 +6,7 @@ onready var _volume : HSlider = $PanelContainer/MarginContainer/VBoxContainer/Ma
 onready var _volume_display : Label = $PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2/HBoxContainer/VolumeDisplay
 onready var _swap_sfx : AudioStreamPlayer = $Swap
 onready var _select_sfx : AudioStreamPlayer = $Select
+onready var _auto_run : CheckBox = $PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/AutoRun
 onready var language_buttons := {
 	Globals.Languages.EN_US : get_node("PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/VBoxContainer/EN_US"),
 	Globals.Languages.PT_BR : get_node("PanelContainer/MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/VBoxContainer/PT_BR")
@@ -30,7 +31,8 @@ func _process(_delta : float):
 func _ready():
 	_text_speed.value = Data.char_per_seconds
 	_volume.value = Data.volume
-	language_buttons[Data.language].pressed = true
+	language_buttons[Data.language].set_pressed_no_signal(true)
+	_auto_run.set_pressed_no_signal(Data.auto_run)
 	
 	for key in language_buttons:
 		var button : Button = language_buttons[key]
@@ -76,3 +78,8 @@ func _on_PT_BR_pressed():
 	language_buttons[Globals.Languages.EN_US].set_pressed_no_signal(false)
 	language_buttons[Globals.Languages.PT_BR].disabled = true
 	language_buttons[Globals.Languages.EN_US].disabled = false
+
+
+func _on_AutoRun_pressed():
+	Data.auto_run = not Data.auto_run
+	Data.save_config()

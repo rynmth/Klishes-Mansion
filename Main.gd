@@ -21,6 +21,8 @@ func _selected() : _select_sfx.play()
 
 
 func _ready():
+	if Chase.playing : Chase.stop()
+	
 	reset()
 	_transition.fade_out()
 	

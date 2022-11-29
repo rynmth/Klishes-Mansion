@@ -3,9 +3,10 @@ extends Node
 var nickname := "Benjamin"
 var playing := false
 var playtime := 0.0
-var volume := 10
+var volume := 100
 var char_per_seconds := 40
 var language := -1
+var auto_run := false
 var last_position := Vector2.ZERO
 var last_direction := Vector2.ZERO
 var current_location := 0
@@ -63,6 +64,7 @@ func save_config() -> void:
 	file.store_32(volume)
 	file.store_32(char_per_seconds)
 	file.store_64(language)
+	file.store_32(int(auto_run))
 	file.close()
 
 
@@ -75,6 +77,7 @@ func load_config() -> void:
 	volume = file.get_32()
 	char_per_seconds = file.get_32()
 	language = file.get_64()
+	auto_run = bool(file.get_32())
 	file.close()
 
 

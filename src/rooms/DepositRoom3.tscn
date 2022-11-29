@@ -10,6 +10,7 @@
 chase_delay = 1.0
 flash_light = true
 level_id = 11
+save_from_start = true
 
 [node name="CanvasModulate" parent="." index="1"]
 color = Color( 0.0392157, 0.0392157, 0.0392157, 1 )

@@ -97,6 +97,7 @@ func _on_Enemy_area_entered(player : Area2D):
 	if not player.name == "Player" : return
 	
 	Data.set_meta("hidden", false)
+	Data.set_meta("chased", false)
 	Chase.stop()
 	player.set_process(false)
 	player._tween.stop_all()

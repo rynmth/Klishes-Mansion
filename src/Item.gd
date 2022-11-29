@@ -8,10 +8,13 @@ onready var _dialogue_box := preload("res://src/ui/MessageBox.tscn")
 onready var _ui : CanvasLayer = owner.get_node("UI")
 onready var _stream_player : AudioStreamPlayer = $AudioStreamPlayer
 
+var collected := false
+
 
 func _dialogue_finished(player : Node2D):
 	player.set_process(true)
 	Data.items.append(id)
+	collected = true
 	
 	if spawn_shadow:
 		owner.spawn_enemy()
@@ -23,7 +26,7 @@ func _dialogue_finished(player : Node2D):
 
 
 func action(player : Area2D):
-	if Data.items.has(id) : return
+	if collected : return
 	player.set_process(false)
 	
 	var dialogue_box : Control = _dialogue_box.instance()

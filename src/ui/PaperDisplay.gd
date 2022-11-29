@@ -15,10 +15,19 @@ func _ready():
 	_label.text = text
 
 
-func _process(_delta : float):
-	if Input.is_action_just_pressed("ui_accept"):
-		var tween := create_tween()
-		
-		tween.tween_property(self, "modulate", Color(0.0, 0.0, 0.0, 0.0), 0.3)
-		tween.tween_callback(self, "emit_signal", ["finished"])
-		tween.tween_callback(self, "queue_free")
+func _input(event : InputEvent):
+	if event is InputEventScreenTouch and event.pressed:
+		destroy()
+
+
+func _unhandled_input(event : InputEvent):
+	if event is InputEventKey and event.pressed:
+		destroy()
+
+
+func destroy():
+	var tween := create_tween()
+	
+	tween.tween_property(self, "modulate", Color(0.0, 0.0, 0.0, 0.0), 0.3)
+	tween.tween_callback(self, "emit_signal", ["finished"])
+	tween.tween_callback(self, "queue_free")

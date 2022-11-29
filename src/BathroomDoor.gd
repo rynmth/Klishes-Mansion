@@ -3,6 +3,8 @@ extends Area2D
 onready var _transition := preload("res://src/Transition.tscn")
 onready var _dialogue_box := preload("res://src/ui/MessageBox.tscn")
 onready var _ui : CanvasLayer = owner.get_node("UI")
+onready var _stream_player : AudioStreamPlayer = $AudioStreamPlayer
+
 var target := "res://src/rooms/Bathroom.tscn"
 var id := 0
 var unique_id := 12
@@ -18,8 +20,10 @@ func warp(player : Area2D) -> void:
 	var transition := owner.get_node("UI/Transition")
 	
 	player.warping = true
+	_stream_player.play()
 	transition.fade_in()
 	yield(transition, "finished")
+	yield(_stream_player, "finished")
 	
 	Data.set_meta("look_dir", Vector2.RIGHT)
 	Data.set_meta("teleporter_id", 0)

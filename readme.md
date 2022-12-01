@@ -10,4 +10,4 @@ Klishe's Mansions is a game i made in 30 days for [Game Off 2022](https://itch.i
 
 # About
 
-That's my first game i publish and my first time in a Game Jam, i joined because i thought it would be cool (and it was fun). I made this game inspired by [Ao Oni](https://ungodly.itch.io/ao-oni-r).
+That's my first game i publish and my first time in a Game Jam, i joined because i thought it would be cool (and it was). I made this game inspired by [Ao Oni](https://ungodly.itch.io/ao-oni-r).
